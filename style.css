@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(148, 201, 219, 0.149);
+}
+
+.childContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.error,
+.errorExpenses {
+    margin: 0;
+    display: none;
+    color: rgba(255, 70, 70, 0.749);
+}
+
+.budgetBox {
+    display: block;
+    background-color: white;
+    height: 180px;
+    width: 250px;
+    text-align: left;
+    margin: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 5px 0 rgba(174, 203, 212, 0.36);
+    border-radius: 8px;
+}
+
+.budgetBox h2,
+.expensesBox h2 {
+    font-size: 22px;
+}
+
+.budgetBox input,
+.expensesBox input {
+    outline: 0;
+    padding: 10px;
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid lightgray;
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
+
+.budgetBox input:focus,
+.expensesBox input:focus {
+    border: 1px solid black;
+}
+
+.budgetbutton,
+.expensesButton {
+    margin-top: 15px;
+    height: 35px;
+    width: 120px;
+    border: 0;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.budgetbutton:active,
+.expensesButton:active {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.expensesBox h2 {
+    margin-top: 5px;
+}
+
+.expensesBox {
+    width: 250px;
+    height: 180px;
+    background-color: white;
+    margin: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 5px 0 rgba(174, 203, 212, 0.36);
+    border-radius: 8px;
+}
+
+.expensesButton {
+    margin-top: 5px;
+}
+
+.totalAmountShow {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    width: 85%;
+    margin: 40 auto;
+    box-shadow: 0 0 10px 0 lightgray;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+}
+
+.totalBudgetDiv h2,
+.ExpensesDiv h2,
+.balanceShow h2 {
+    font-size: 18px;
+}
+
+.totalBudgetDiv p,
+.ExpensesDiv p,
+.balanceShow p {
+    font-size: 18px;
+}
+
+.listContainer {
+    padding: 10px;
+    margin: 20px auto;
+    width: 95%;
+    background-color: white;
+    box-shadow: 0 5px 5px 0 rgba(174, 203, 212, 0.36);
+    height: auto;
+    border-radius: 4px;
+}
+
+.listContainer h2 {
+    font-size: 20px;
+}
+
+.list {
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.edit {
+    margin-left: auto;
+}
+
+.product {
+    font-weight: 500;
+    color: #363d55;
+}
+
+.amount {
+    color: #414a67;
+    margin-left: 20%;
+}
+
+.sublist-content {
+    width: 100%;
+    border-left: 0.3em solid #587ef4;
+    margin-bottom: 0.6em;
+    padding: 0.5em 1em;
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr 1fr;
+}
+
+.flex-space {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

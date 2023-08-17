@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="childContainer">
+            <div class="budgetBox">
+                <h2>Budget</h2>
+                <div class="error" id="budgetError">
+                    <p>Enter valid Budget</p>
+                </div>
+                <input type="text" class="BudgetText" id="budgetInput" placeholder="Enter Total Amount"><br>
+                <button class="budgetbutton" id="budgetBtn">Set Budget</button>
+            </div>
+            <div class="expensesBox">
+                <h2>Expenses</h2>
+                <div class="errorExpenses" id="expenseserror">
+                    <p>Invalid</p>
+                </div>
+                <input type="text" class="expensesTitle" id="expensestitle1" placeholder="Enter Title">
+                <input type="text" class="expensesamount" id="expensesAmount1" placeholder="Enter Amount">
+                <button class="expensesButton" id="expensesBtn">Check Amount</button>
+            </div>
+        </div>
+ 
+        <div class="totalAmountShow">
+            <div class="totalBudgetDiv">
+                <h2>Total Budget</h2>
+                <p id="TotalAmount">0</p>
+            </div>
+            <div class="ExpensesDiv">
+                <h2>Expenses</h2>
+                <p id="ExpensecAmount">0</p>
+            </div>
+            <div class="balanceShow">
+                <h2>Balance</h2>
+                <p id="BalanceAmount">0</p>
+            </div>
+        </div>
+        <div class="listContainer">
+            <h2>Expense List</h2>
+            <div class="list" id="ExpensesList">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
